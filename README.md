@@ -63,7 +63,12 @@ feature_imp, node_imp = lime_explainer_astgcn(model, batch)
 
 Make sure your `batch` contains all the required keys (`features`, `adj`, `v`, `theta`, etc.).
 
-## Notes
+1. Feature-wise LIME Importance
+Displays which input features (like PM2.5, temperature, speed, etc.) were most important.
+
+## ![WhatsApp Image 2025-06-30 at 15 05 29_e1a17540](https://github.com/user-attachments/assets/ee075fd5-dda4-4673-8e34-e3e67b7a09bc)
+
+Notes
 
 * This is not a general-purpose LIME — it is tailored for ASTGCN input format.
 * You can adjust `kernel_width` and `num_perturbations` as needed.
